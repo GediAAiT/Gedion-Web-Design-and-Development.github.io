@@ -1,0 +1,384 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #1a1a1a;
+    color: #fff;
+    line-height: 1.6;
+    width: 100%;
+    overflow-x: hidden; }
+
+h1, h2 {
+    font-family: 'Arial', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.7);
+    width: 100%;
+}
+
+.navbar .logo h2 {
+    font-size: 30px;
+    color: #fff;
+    font-weight: bold;
+}
+
+.navbar .logo span {
+    color: #ff6600;
+}
+
+.menu ul {
+    display: flex;
+    gap: 20px;
+}
+
+.menu ul li a {
+    color: #fff;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+.menu ul li a:hover {
+    color: #ff6600;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.search-input {
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    width: 250px;
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.search-input::placeholder {
+    color: #aaa;
+}
+
+.btn {
+    padding: 10px 20px;
+    background: #ff6600;
+    border-radius: 5px;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    background: #cc5200;
+}
+
+.hero {
+    background: url('Learn1.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    padding: 20px; 
+    overflow: hidden;
+}
+
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 40px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 1200px; 
+    margin: 0 auto; 
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    letter-spacing: 1px;
+}
+
+.hero-img {
+    width: 170px;
+    height: 170px;
+    padding: 20px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 20px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.hero h1 span {
+    color: #ff6600;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #ff6600;
+    padding: 12px 30px;
+    color: #fff;
+    border-radius: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #cc5200;
+}
+
+
+@media (max-width: 667px) and (min-width: 375px) {
+    body {
+        overflow-x: hidden; /* Ensure no horizontal scrolling */
+    }
+
+    .navbar {
+        display: block;
+        padding: 10px;
+    }
+
+    .menu ul {
+        display: block;
+        text-align: center;
+        padding: 10px 0;
+    }
+
+    .menu ul li {
+        margin-bottom: 10px;
+    }
+
+    .menu ul li a {
+        font-size: 14px;
+        padding: 5px 10px;
+    }
+
+    .search-input {
+        width: 90%; /* Allow some breathing room */
+        max-width: 100%; /* Prevent overflow */
+    }
+
+    .btn {
+        width: auto;
+        padding: 8px 15px;
+    }
+
+    .hero {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .hero-content {
+        padding: 20px;
+        width: 100%;
+        max-width: 600px; 
+        margin: 0 auto;
+        overflow-wrap: break-word; 
+        box-sizing: border-box; 
+    }
+
+    .hero h1 {
+        font-size: 28px;
+        margin-bottom: 15px;
+        word-wrap: break-word; 
+    }
+
+    .hero p {
+        font-size: 14px;
+        line-height: 1.4;
+    }
+
+    .cta-button {
+        padding: 10px 20px;
+        width: auto;
+        display: inline-block;
+    }
+}
+
+@media (max-width: 414px) {
+    .navbar {
+        display: block;
+        padding: 15px;
+    }
+    .menu ul {
+        display: block;
+        text-align: left; 
+        padding: 10px 0;
+    }
+    .menu ul li {
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 768px) {
+    .navbar {
+        display: block; 
+    }
+    .menu ul {
+        display: block;
+        text-align: left; 
+        padding: 10px 0;
+    }
+    .menu ul li {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 820px) {
+    .navbar {
+        display: block; 
+    }
+    .menu ul {
+        display: block;
+        text-align: left; 
+        padding: 10px 0;
+    }
+    .menu ul li {
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 1024px) {
+    .navbar {
+        display: block; 
+    }
+    .menu ul {
+        display: block;
+        text-align: left;
+        padding: 10px 0;
+    }
+    .menu ul li {
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 375px) {
+    .hero-content {
+        padding: 15px;
+        width: 90%;
+        max-width: 360px; 
+        overflow: hidden;
+        margin: 0 auto;
+    }
+    .hero h1 {
+        font-size: 28px; 
+    }
+    .hero p {
+        font-size: 14px;
+    }
+}
+
+
+@media (max-width: 900px) {
+    .navbar {
+        display: block; 
+    }
+    .menu ul {
+        display: block;
+        text-align: left;
+        padding: 10px 0;
+    }
+    .menu ul li {
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 540px) {
+    .navbar {
+        display: block; 
+    }
+    .menu ul {
+        display: block;
+        text-align: left;
+        padding: 10px 0;
+    }
+    .menu ul li {
+        margin-bottom: 10px;
+    }
+    .card {
+        width: 100%; 
+    }
+}
+@media (max-width: 520px) {
+    .navbar {
+        display: block; 
+    }
+    .menu ul {
+        display: block;
+        text-align: left;
+        padding: 10px 0;
+    }
+    .menu ul li {
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 700px) {
+    .navbar {
+        display: block; 
+    }
+    .menu ul {
+        display: block;
+        text-align: left;
+        padding: 10px 0;
+    }
+    .menu ul li {
+        margin-bottom: 10px;
+    }
+    .card {
+        width: 48%; 
+    }
+}
+@media (max-width: 412px) {
+    .navbar {
+        display: block; 
+    }
+    .menu ul {
+        display: block;
+        text-align: left;
+        padding: 10px 0;
+    }
+    .menu ul li {
+        margin-bottom: 10px;
+    }
+}
+@media (max-width: 1024px) and (orientation: landscape) {
+    .navbar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 15px 20px;
+    }
+    .menu ul {
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+    }
+}
